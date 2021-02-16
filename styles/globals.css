@@ -1,6 +1,10 @@
 :root {
   --color-bg: white;
-  --color-blue: #1e90ff;
+  --color-white: white;
+  --color-blue: #1273d3;
+  --color-gray: grey;
+  --color-black: #000000;
+  --colors-text: #000000;
 }
 
 html,
@@ -20,7 +24,11 @@ a {
   box-sizing: border-box;
 }
 
-
+button {
+  border: 0;
+  border-radius: 5px;
+  padding: 20px;
+}
 
 /* Loader */
 .loader {
@@ -36,4 +44,59 @@ a {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+.btn-logo {
+  color: #ffffff;
+  background: var(--color-black);
+  font-weight: bold;
+}
+
+.btn-blue {
+  background: var(--color-blue);
+  color: var(--color-white);
+}
+
+.card-img-center {
+  width: 20%;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  max-width: 150px;
+}
+
+
+/* Navbar */
+.navbar {
+  height: 70px;
+  width: 100%;
+  background: #ffffff;
+  color: var(--colors-text);
+  position: fixed;
+  top: 0;
+  padding: 0 10vw;
+  font-weight: bold;
+  border-bottom: 1px solid var(--color-gray);
+  z-index: 99;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.navbar img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.navbar li {
+  border-radius: 50%;
 }
